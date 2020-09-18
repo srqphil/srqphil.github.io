@@ -1,4 +1,85 @@
-body {
-  color: red;
+html, body {
+  background-color: #0b1432;
+  color: #EECD81;
+  margin: 0;
+  font-family: lekton;
+}
+
+nav {
+  background-color: #F37168;
+}
+
+nav ul {
+  margin: 0;
+  margin-right: 80px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav ul li {
+  display: inline;
+  color: #0F1B43;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0F1B43;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #EECD81;
+}
+
+main {
+  margin-left: 100px;
+  margin-top: 150px;
+}
+
+main h1 {
+  margin: 0;
+  font-size: 120px;
+  line-height: 1.2;
+  color: #F37168;
+}
+
+main h2 {
+  margin: 0;
+  font-size: 36px;
+}
+
+footer {
+  margin: 100px;
+}
+
+footer h4 {
+  color: #F37168;
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
+  main {
+    margin-left: 50px;
+  }
+  main h1 {
+    font-size: 92px;
+  }
+  main h2 {
+    font-size: 24px;
+  }
+  footer {
+    margin: 50px;
+    margin-top: 100px;
+  }
 }
 /*# sourceMappingURL=phillipstyle.css.map */
