@@ -47,7 +47,7 @@ main {
 main h1 {
   margin: 0;
   font-size: 120px;
-  line-height: 1.2;
+  line-height: 1.1;
   color: #F37168;
 }
 
@@ -64,6 +64,10 @@ footer h4 {
   color: #F37168;
 }
 
+footer p {
+  max-width: 800px;
+}
+
 @media only screen and (max-width: 600px) {
   nav ul {
     display: none;
@@ -72,7 +76,7 @@ footer h4 {
     margin-left: 30px;
   }
   main h1 {
-    font-size: 92px;
+    font-size: 84px;
   }
   main h2 {
     font-size: 24px;
