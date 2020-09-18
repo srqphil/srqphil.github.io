@@ -6,18 +6,22 @@
     <title>Phillip's Portfolio Website: About Me</title>
     <link rel="stylesheet" href="phillipstyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul id="myLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
+                <li><a class="active" href="aboutme.html">About Me</a></li>
             </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i id="menu_icons" class="material-icons">menu</i> 
+            </a>
         </nav>
-    </header> 
+    </header>
     <main>
         <h1>About Me</h1>
         <h2>COMING SOON</h2>
@@ -26,5 +30,22 @@
         <h4>!THIS SITE IS UNDER CONSTRUCTION!</h4>
         <p>Hi, I’m Phillip. This will be the homepage for my personal web site that will be the main source of information for my web development projects. This will also be the main hub for my web presence on the internet and a great place to contact me. Thank you for visiting!</p>
     </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+             x.style.display = "flex";
+            }
+            var y = document.getElementById("menu_icons");
+            if (y.innerHTML === "menu") {
+                y.innerHTML = "menu_open";
+            }
+            else {
+                y.innerHTML = "menu";
+            }
+        }
+    </script>
 </body>
 </html>
