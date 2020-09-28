@@ -1,131 +1,109 @@
-html, body {
-    background-color: #0b1432;
-    color: #EECD81;
+body, html {
+    background-color:#e6e6e6;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
     margin: 0;
-    font-family: lekton;
-}
+  }
+  
+  nav {
+    position: absolute;
+    right: 16px;
+    top: 16px;
 
-nav {
-    background-color: #F37168;
+    #myLinks {display: none;}
 
-    #myLinks {
-        margin: 0;
-        margin-right: 80px;
-        list-style: none;
-        display: flex;
-        justify-content: flex-end;
-
-        li {
-            display: inline;
-            color: #0F1B43;
-            font-size: 20px;
-            font-weight: bold;
-            padding: 10px;
-            
-            .active {color: #FFFFFF;}
-
-            a {
-                text-decoration: none;
-                color: #0F1B43;
-                padding: 10px;
-            }
-
-            a:hover {
-                background-color: #EECD81;
-            }
-
-        }
+    #menu_icons {
+        background-color: white;
+        font-size: 48px;
+        color: black;
     }
-    .icon {display: none;}
-}
+  } 
 
-main {
-   margin-left: 100px;
-   margin-top: 150px; 
 
-   h1 {
-       margin: 0;
-       font-size: 120px;
-       line-height: 1.1;
-       color: #F37168;
-   }
+  .card {
+      background-color: white;
+      border: solid 4px black;
+      margin: 8px 4px;
+      padding-bottom: 40px;
 
-   h2{
-        margin: 0;
-        font-size: 36px;
-   }
-}
+    .titleBox {
+        border-bottom: black solid 4px;
+        background-color: #6699cc;
+        margin-bottom: 16px;
 
-footer {
-    margin: 100px;
-
-    h4 { color: #F37168;}
-    p {max-width: 800px;}
-}
-
-@media only screen and (max-width: 600px){
-    #home_icon {
-        color: #F37168;
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 0;
-            padding: 16px;
-            text-decoration: none;
-            
-            i {
-                font-size: 48px;
-            }
-    }
-
-    nav {
-        #myLinks {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            right: 0px;
-            top: 80px;
+        h1 {
             margin: 0;
-            padding: 0;
-            background-color: #0F1B43;
-            box-shadow: -19px 22px 19px -5px rgba(0,0,0,0.25);
-            
-            li a {
-                color: #F37168;
-                font-size: 36px;
-                padding: 0px, 20px;
-            }
-
-            li a:hover {background-color: #0F1B43;}
-        }
-
-        .icon {
-            color: #F37168;
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 0;
-            padding: 16px;
-            text-decoration: none;
-            
-            i {
-                font-size: 48px;
-            }
+            padding: 8px;
         }
     }
+  }
 
-    main {
-        margin-left: 30px;
-        h1 {font-size: 84px;}
-        h2 {font-size: 24px;}
+  i {background-color: #eecd81;}
+
+  #homeCard {
+        padding: 8px;    
+        background-color: white;
+        border: solid 4px black;
+        margin: 4px;
+        min-height: 600px;
     }
 
-    footer {
-        margin: 30px;
-        margin-top: 100px;
+  #homeIMG
+  {
+    border: black 4px solid;
+    width: 75%;
+    min-height: 300px;
+    background-color: #33cc99;
+  }
+
+  #aboutIMG
+  {
+    border: black 4px solid;
+    width: 60%;
+    min-height: 120px;
+    background-color: #33cc99;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    a,p,h2 {
+        margin: auto;
+        padding: 0px 16px;
+    }
+  }
+  
+  .projectIMG {
+      background-color: #33cc99;
+      border: black solid 4px;
+      width: 90%;
+      margin: auto;
+      height: 100px;
+  }
+
+  .projectLinks {
+        display: flex;
+        margin: 12px;
+        padding-bottom: 36px;
+    }
+
+  .projectLinks > a {
+      display: block;
+      border: black 4px solid;
+      padding: 8px;
+      margin: auto;
+  }
+
+#socialLinks {
+    display: flex;
+    padding: 0;
+
+    a {
+        display: block;
+        border: black solid 4px;
+        padding: 16px 4px;
     }
 }
 
-@media only screen and (min-width: 600px) {
-    #myLinks {display: flex;}
-}
+footer > p {text-align: center;}
+

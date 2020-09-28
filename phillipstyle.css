@@ -1,149 +1,114 @@
-html, body {
-  background-color: #0b1432;
-  color: #EECD81;
+body, html {
+  background-color: #e6e6e6;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
   margin: 0;
-  font-family: lekton;
 }
 
 nav {
-  background-color: #F37168;
+  position: absolute;
+  right: 16px;
+  top: 16px;
 }
 
 nav #myLinks {
-  margin: 0;
-  margin-right: 80px;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-nav #myLinks li {
-  display: inline;
-  color: #0F1B43;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px;
-}
-
-nav #myLinks li .active {
-  color: #FFFFFF;
-}
-
-nav #myLinks li a {
-  text-decoration: none;
-  color: #0F1B43;
-  padding: 10px;
-}
-
-nav #myLinks li a:hover {
-  background-color: #EECD81;
-}
-
-nav .icon {
   display: none;
 }
 
-main {
-  margin-left: 100px;
-  margin-top: 150px;
+nav #menu_icons {
+  background-color: white;
+  font-size: 48px;
+  color: black;
 }
 
-main h1 {
+.card {
+  background-color: white;
+  border: solid 4px black;
+  margin: 8px 4px;
+  padding-bottom: 40px;
+}
+
+.card .titleBox {
+  border-bottom: black solid 4px;
+  background-color: #6699cc;
+  margin-bottom: 16px;
+}
+
+.card .titleBox h1 {
   margin: 0;
-  font-size: 120px;
-  line-height: 1.1;
-  color: #F37168;
+  padding: 8px;
 }
 
-main h2 {
-  margin: 0;
-  font-size: 36px;
+i {
+  background-color: #eecd81;
 }
 
-footer {
-  margin: 100px;
+#homeCard {
+  padding: 8px;
+  background-color: white;
+  border: solid 4px black;
+  margin: 4px;
+  min-height: 600px;
 }
 
-footer h4 {
-  color: #F37168;
+#homeIMG {
+  border: black 4px solid;
+  width: 75%;
+  min-height: 300px;
+  background-color: #33cc99;
 }
 
-footer p {
-  max-width: 800px;
+#aboutIMG {
+  border: black 4px solid;
+  width: 60%;
+  min-height: 120px;
+  background-color: #33cc99;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-  #home_icon {
-    color: #F37168;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 16px;
-    text-decoration: none;
-  }
-  #home_icon i {
-    font-size: 48px;
-  }
-  nav #myLinks {
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: absolute;
-    right: 0px;
-    top: 80px;
-    margin: 0;
-    padding: 0;
-    background-color: #0F1B43;
-    -webkit-box-shadow: -19px 22px 19px -5px rgba(0, 0, 0, 0.25);
-            box-shadow: -19px 22px 19px -5px rgba(0, 0, 0, 0.25);
-  }
-  nav #myLinks li a {
-    color: #F37168;
-    font-size: 36px;
-    padding: 0px, 20px;
-  }
-  nav #myLinks li a:hover {
-    background-color: #0F1B43;
-  }
-  nav .icon {
-    color: #F37168;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 16px;
-    text-decoration: none;
-  }
-  nav .icon i {
-    font-size: 48px;
-  }
-  main {
-    margin-left: 30px;
-  }
-  main h1 {
-    font-size: 84px;
-  }
-  main h2 {
-    font-size: 24px;
-  }
-  footer {
-    margin: 30px;
-    margin-top: 100px;
-  }
+.card a, .card p, .card h2 {
+  margin: auto;
+  padding: 0px 16px;
 }
 
-@media only screen and (min-width: 600px) {
-  #myLinks {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.projectIMG {
+  background-color: #33cc99;
+  border: black solid 4px;
+  width: 90%;
+  margin: auto;
+  height: 100px;
+}
+
+.projectLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 12px;
+  padding-bottom: 36px;
+}
+
+.projectLinks > a {
+  display: block;
+  border: black 4px solid;
+  padding: 8px;
+  margin: auto;
+}
+
+#socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+#socialLinks a {
+  display: block;
+  border: black solid 4px;
+  padding: 16px 4px;
+}
+
+footer > p {
+  text-align: center;
 }
 /*# sourceMappingURL=phillipstyle.css.map */
