@@ -6,14 +6,36 @@ body, html {
   }
   
   nav {
-    position: absolute;
-    right: 16px;
+    position: fixed;
+    right: 24px;
     top: 16px;
 
-    #myLinks {display: none;}
+    #myLinks {
+        position: fixed;
+        right: 0px;
+        top: 50px;
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        border: black 4px solid;
+        border-right: none;
+        padding: 0px;
+        list-style-type: none;
+        padding: 16px;
+
+        li {
+            display: block;
+            padding: 12px;
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
 
     #menu_icons {
-        background-color: white;
+        background-color: rgba($color: #000000, $alpha: 0.0);
         font-size: 48px;
         color: black;
     }
@@ -23,7 +45,7 @@ body, html {
   .card {
       background-color: white;
       border: solid 4px black;
-      margin: 8px 4px;
+      margin: 8px 12px 8px 4px;
       padding-bottom: 40px;
 
     .titleBox {
@@ -44,14 +66,14 @@ body, html {
         padding: 8px;    
         background-color: white;
         border: solid 4px black;
-        margin: 4px;
+        margin: 8px 12px 8px 4px;
         min-height: 600px;
     }
 
   #homeIMG
   {
     border: black 4px solid;
-    width: 75%;
+    width: 80%;
     min-height: 300px;
     background-color: #33cc99;
   }
@@ -59,7 +81,7 @@ body, html {
   #aboutIMG
   {
     border: black 4px solid;
-    width: 60%;
+    width: 80%;
     min-height: 120px;
     background-color: #33cc99;
     margin: auto;
@@ -94,16 +116,36 @@ body, html {
       margin: auto;
   }
 
+#email {
+    display: block;
+    margin: 12px 0px;
+    font-size: 16px;
+}
+
 #socialLinks {
     display: flex;
     padding: 0;
+    margin: 8px;
 
     a {
         display: block;
-        border: black solid 4px;
-        padding: 16px 4px;
+        padding: 4px 4px;
     }
 }
+
+#resume { 
+    margin: 32px 16px;
+
+    a {
+        border: black 4px solid;
+        padding: 12px 18px;
+        background-color: #eecd81;
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+
+footer {min-height: 200px;}
 
 footer > p {text-align: center;}
 
