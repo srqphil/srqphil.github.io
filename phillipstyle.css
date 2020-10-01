@@ -7,14 +7,15 @@ body, html {
 
 nav {
   position: fixed;
-  right: 24px;
-  top: 16px;
+  right: 20px;
+  top: 4px;
+  z-index: 1;
 }
 
 nav #myLinks {
   position: fixed;
   right: 0px;
-  top: 50px;
+  top: 40px;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -45,22 +46,32 @@ nav #menu_icons {
   color: black;
 }
 
+.titleBox {
+  border-bottom: black solid 4px;
+  background-color: #6699cc;
+  border: solid 4px black;
+  margin: 8px 12px 0px 4px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.titleBox h1 {
+  margin: 0;
+  padding: 8px;
+}
+
 .card {
   background-color: white;
   border: solid 4px black;
-  margin: 8px 12px 8px 4px;
-  padding-bottom: 40px;
+  border-top: none;
+  margin: 0px 12px 8px 4px;
+  padding: 40px 0px;
 }
 
-.card .titleBox {
-  border-bottom: black solid 4px;
-  background-color: #6699cc;
-  margin-bottom: 16px;
-}
-
-.card .titleBox h1 {
-  margin: 0;
-  padding: 8px;
+.card a, .card p, .card h2 {
+  margin: auto;
+  padding: 0px 24px;
 }
 
 i {
@@ -71,8 +82,26 @@ i {
   padding: 8px;
   background-color: white;
   border: solid 4px black;
-  margin: 8px 12px 8px 4px;
+  margin: 0px 12px 8px 4px;
   min-height: 600px;
+}
+
+#homeCard #name {
+  font-size: 32px;
+  margin: 12px 0px;
+}
+
+#homeCard #title {
+  font-size: 24px;
+  margin: 8px 0px;
+}
+
+#homeCard h1, #homeCard h2, #homeCard p {
+  padding: 0px 48px 0px 12px;
+}
+
+#homeCard #construction {
+  color: red;
 }
 
 #homeIMG {
@@ -80,6 +109,10 @@ i {
   width: 80%;
   min-height: 300px;
   background-color: #33cc99;
+}
+
+#about {
+  background-color: #6699cc;
 }
 
 #aboutIMG {
@@ -91,17 +124,17 @@ i {
   margin-bottom: 20px;
 }
 
-.card a, .card p, .card h2 {
-  margin: auto;
-  padding: 0px 16px;
+#projects {
+  background-color: #33cc99;
 }
 
 .projectIMG {
-  background-color: #33cc99;
+  background-color: #eecd81;
   border: black solid 4px;
   width: 90%;
   margin: auto;
   height: 100px;
+  margin-top: 8px;
 }
 
 .projectLinks {
@@ -109,7 +142,7 @@ i {
   display: -ms-flexbox;
   display: flex;
   margin: 12px;
-  padding-bottom: 36px;
+  padding-bottom: 12px;
 }
 
 .projectLinks > a {
@@ -119,9 +152,13 @@ i {
   margin: auto;
 }
 
+#connected {
+  background-color: #d65c5c;
+}
+
 #email {
   display: block;
-  margin: 12px 0px;
+  margin: 12px 0px 100px 0px;
   font-size: 16px;
 }
 
@@ -129,8 +166,7 @@ i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
-  margin: 8px;
+  padding: 0px 0px 24px 0px;
 }
 
 #socialLinks a {
@@ -139,7 +175,7 @@ i {
 }
 
 #resume {
-  margin: 32px 16px;
+  margin: 32px 16px 100px 16px;
 }
 
 #resume a {
@@ -151,7 +187,7 @@ i {
 }
 
 footer {
-  min-height: 200px;
+  min-height: 300px;
 }
 
 footer > p {
