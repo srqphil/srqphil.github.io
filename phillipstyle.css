@@ -27,6 +27,8 @@ nav #myLinks {
   padding: 0px;
   list-style-type: none;
   padding: 16px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.4);
 }
 
 nav #myLinks li {
@@ -54,24 +56,33 @@ nav #menu_icons {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  -webkit-box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.3);
 }
 
 .titleBox h1 {
   margin: 0;
-  padding: 8px;
+  padding: 8px 16px;
+  color: white;
 }
 
 .card {
   background-color: white;
   border: solid 4px black;
   border-top: none;
-  margin: 0px 12px 8px 4px;
+  margin: 0px 12px 12px 4px;
   padding: 40px 0px;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .card a, .card p, .card h2 {
   margin: auto;
   padding: 0px 24px;
+}
+
+.card h2 {
+  font-size: 28px;
 }
 
 i {
@@ -82,8 +93,10 @@ i {
   padding: 8px;
   background-color: white;
   border: solid 4px black;
-  margin: 0px 12px 8px 4px;
+  margin: 0px 12px 12px 4px;
   min-height: 600px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 #homeCard #name {
@@ -166,12 +179,14 @@ i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px 0px 24px 0px;
+  padding: 12px 0px 24px 0px;
 }
 
 #socialLinks a {
   display: block;
   padding: 4px 4px;
+  width: 48px;
+  height: 48px;
 }
 
 #resume {

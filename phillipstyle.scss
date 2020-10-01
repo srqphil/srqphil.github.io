@@ -23,6 +23,7 @@ body, html {
         padding: 0px;
         list-style-type: none;
         padding: 16px;
+        box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.4);
 
         li {
             display: block;
@@ -49,10 +50,12 @@ body, html {
     margin: 8px 12px 0px 4px;
     position: sticky;
     top: 0;
+    box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.3);
 
     h1 {
         margin: 0;
-        padding: 8px;
+        padding: 8px 16px;
+        color:white;
     }
 }
 
@@ -60,13 +63,16 @@ body, html {
     background-color: white;
     border: solid 4px black;
     border-top: none;
-    margin: 0px 12px 8px 4px;
+    margin: 0px 12px 12px 4px;
     padding: 40px 0px;
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
 
     a,p,h2 {
         margin: auto;
         padding: 0px 24px;
     }
+
+    h2 { font-size: 28px;}
 }
 
 i {background-color: #eecd81;}
@@ -75,8 +81,9 @@ i {background-color: #eecd81;}
         padding: 8px;    
         background-color: white;
         border: solid 4px black;
-        margin: 0px 12px 8px 4px;
+        margin: 0px 12px 12px 4px;
         min-height: 600px;
+        box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
 
         #name {
             font-size: 32px;
@@ -149,11 +156,13 @@ i {background-color: #eecd81;}
 
 #socialLinks {
     display: flex;
-    padding: 0px 0px 24px 0px;
+    padding: 12px 0px 24px 0px;
 
     a {
         display: block;
         padding: 4px 4px;
+        width: 48px;
+        height: 48px;
     }
 }
 
