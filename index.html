@@ -4,43 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phillip's Portfolio Website: Index</title>
-    <link rel="stylesheet" href="phillipstyle.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="newstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <header>
+        <h2>Phillip Peña</h2>
         <nav>
-            <ul id="myLinks">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="#about" onclick="myFunction()">About Me</a></li>
-                <li><a href="#projects" onclick="myFunction()">Projects</a></li>
-                <li><a href="#connected" onclick="myFunction()">Contact</a></li>
-            </ul>
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#project">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i id="menu_icons" class="material-icons">menu</i> 
             </a>
         </nav>
-    </header> 
+    </header>
     <main>
-        <div id="homeCard">
-            <div id="homeIMG"><i>IMG Placeholder</i></div>
-            <h1 id="name">Phillip Peña</h1>
-            <h2 id="title">Web Developer</h2>
-            <p id="construction">!!!Construction Underway!!!</p>
-            <p>
-                &nbsp Thank you for visiting my first official website, my little slice of the internet. This site will likely always be a work in progress
-                As I continue to develop my skills as a programmer and designer I would like this place to reflect that. 
-                <br> &nbsp Feel free to visit every so often and see how things are progressing! I look forward to sharing more with you soon!
-            </p>
+        <div class="container" id="home">
+            <div class="imgwrapper">
+                <img src="" alt="Line Art Self Portrait">
+            </div>
+            <h1>Web Developer</h1>
         </div>
-
-        <div id="about" class="titleBox">
-            <h1>About Me</h1>
-        </div>
-        <div class="card">
-            <div id="aboutIMG"><i>IMG Placeholder</i></div>
-            <p> &nbsp Hey there, I'm Phillip. I'm a web development student who likes solving interesting 
+        <div class="container" id="about">
+            <h1>Hey There</h1>
+            <p>&nbsp I'm a web development student who likes solving interesting 
                 problems, building neat things and expressing my creativity through programming and design.
                 <br><br>
                 
@@ -51,45 +44,55 @@
                 
                 &nbsp But for now I'm still a baby programmer looking and seeking every oppertunity I can find to better my
                 skills as a developer. If you are interested in talking about web developement oppertunities, mentorship 
-                or you just want to be friends feel free to reach out! I'd love to hear from you. 
-                </p>
+                or you just want to be friends feel free to reach out! I'd love to hear from you.
+            </p>
         </div>
-
-        <div id="projects" class="titleBox">
-            <h1>Projects</h1>
-        </div>
-        <div class="card">
-            <h2>Project Name #1</h2>
-            <div class="projectCard">
-                <div class="projectIMG">
-                    <h3>Coming Soon</h3>
+        <div class="container" id="project">
+            <h1>The Goods</h1>
+            <div class="projectWrapper">
+                <div class="projImg" id="projectOne">
+                    <a href="">link to project</a>
+                    <a href="">link to code</a>
                 </div>
-                <div class="projectLinks">
-                    <a>Git Hub Link</a>
-                    <a>Live Link</a>
-                </div>   
-            </div>
-            <h2>Project Name #2</h2>
-            <div class="projectCard">
-                <div class="projectIMG">
-                    <h3>Coming Soon</h3>
+                <div id="projectText">
+                    <h2>Project Title #1 (Coming Soon!)</h2>
+                    <p>Brief description of project, technologies used, lessons learned and any other interest bits of information</p>
                 </div>
-                <div class="projectLinks">
-                    <a>Git Hub Link</a>
-                    <a>Live Link</a>
-                </div>   
+            
+            
+                <div class="projImg" id="projectTwo">
+                    <a href="">link to project</a>
+                    <a href="">link to code</a>
+                </div>
+                <div id="projectText">
+                    <h2>Project Title #2 (Coming Soon!)</h2>
+                    <p>Brief description of project, technologies used, lessons learned and any other interest bits of information</p>
+                </div>            
+                <div class="projImg" id="projectThree">
+                    <a href="">link to project</a>
+                    <a href="">link to code</a>
+                </div>
+                <div id="projectText">
+                    <h2>Project Title #3 (Coming Soon!)</h2>
+                    <p>Brief description of project, technologies used, lessons learned and any other interest bits of information</p>
+                </div>        
+                <div class="projImg" id="projectFour">
+                    <a href="">link to project</a>
+                    <a href="">link to code</a>
+                </div>
+                <div id="projectText">
+                    <h2>Project Title #4 (Coming Soon!)</h2>
+                    <p>Brief description of project, technologies used, lessons learned and any other interest bits of information</p>
+                </div>
             </div>
         </div>
-
-        <div id="connected" class="titleBox">
-            <h1>Stay Connected</h1>
-        </div>
-        <div class="card">
-            <h2>Hire Me!</h2>
-            <div id="resume"><a href="resume.html">Resume</a></div>
-            <h2>Email Me</h2>
-            <a id="email" href="mailto:ppena941@gmail.com">ppena941@gmail.com</a>
-            <h2> Follow Me On..</h2>
+        <div class="container" id="contact">
+            <h1>Keep in Touch</h2>
+            <h2>Email</h2>
+            <a href="mailto:ppena941@gmail.com">ppena941@gmail.com</a>
+            <h2>Resume</h2>
+            <div id="resume"><a href="resume.html">Open PDF</a></div>
+            <h2>Social Media</h2>
             <div id="socialLinks">
                 <a href="https://www.linkedin.com/in/phillip-pena-8b7035198/"><img src="images/svg/linkedin_round_bw.svg" alt="Round LinkedIn Icon"></a>
                 <a href="https://codepen.io/srqphil"><img src="images/svg/codepen_round_bw.svg" alt="Round Codepen Icon"></a>
@@ -97,19 +100,21 @@
                 <a href="https://twitter.com/PhillipPena"><img src="images/svg/twitter_round_bw.svg" alt="Round Twitter Icon"></a>
                 <a href="https://www.instagram.com/phillip_pena/"><img src="images/svg/instagram_round_bw.svg" alt="Round Instagram Icon"></a>
             </div>
-        </div>
+            </div>
     </main>
     <footer>
-        <p>Designed & Built by Phillip Peña</p>
+        <p>Website Designed and Built by Phillip Peña</p>
     </footer>
     <script>
         function myFunction() {
             var x = document.getElementById("myLinks");
             if (x.style.display === "flex") {
                 x.style.display = "none";
-            } else {
+            }
+            else {
              x.style.display = "flex";
             }
+
             var y = document.getElementById("menu_icons");
             if (y.innerHTML === "menu") {
                 y.innerHTML = "menu_open";

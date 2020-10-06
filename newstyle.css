@@ -1,0 +1,255 @@
+body {
+  background-color: #ececec;
+  font-family: 'Righteous', cursive;
+  margin: auto;
+  max-width: 1000px;
+}
+
+h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  padding: 0px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  background-color: white;
+  border-bottom: 1px solid black;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+header h2 {
+  font-size: 28px;
+}
+
+header #myLinks {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  left: 0px;
+  top: 48px;
+  height: 800px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 60px;
+}
+
+header #myLinks a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 36px;
+  width: 90%;
+  padding: 20px 0px;
+  border-bottom: 1px solid white;
+}
+
+header #menu_icons {
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+}
+
+@media only screen and (min-width: 600px) {
+  header nav {
+    width: 400px;
+  }
+  header nav #myLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: initial;
+    left: initial;
+    top: initial;
+    height: initial;
+    width: initial;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+  }
+  header nav #myLinks a {
+    display: block;
+    color: black;
+    font-size: 20px;
+    padding: 0px 10px;
+    width: initial;
+  }
+  header nav #myLinks a:hover {
+    color: #ffae00;
+    font-size: 22px;
+  }
+  header nav #myLinks a:active {
+    font-size: 20px;
+  }
+  header nav a {
+    display: none;
+  }
+}
+
+main {
+  background-color: white;
+}
+
+main h1 {
+  font-size: 96px;
+  max-width: 400px;
+}
+
+main h2 {
+  font-size: 18px;
+}
+
+.container {
+  margin: auto;
+  max-width: 800px;
+  padding: 40px 12px;
+  border-bottom: 1px solid black;
+}
+
+#home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .imgwrapper {
+  background-color: grey;
+  height: 300px;
+  width: 200px;
+  margin: 40px 0px;
+}
+
+#home h1 {
+  font-size: 36px;
+  margin: 40px 0px;
+}
+
+#about p {
+  margin: 30px 0px;
+}
+
+#project .projectWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px;
+}
+
+#project .projectWrapper .projImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: grey;
+  width: 50%;
+  min-width: 300px;
+  min-height: 200px;
+  border-radius: 12px;
+}
+
+#project .projectWrapper .projImg a {
+  display: block;
+  background-color: white;
+  margin: 8px;
+  width: 64px;
+  padding: 28px 0px;
+  border-radius: 32px;
+  font-size: 8px;
+  text-align: center;
+}
+
+#project .projectWrapper #projectText {
+  max-width: 400px;
+  padding-bottom: 20px;
+}
+
+#project .projectWrapper #projectText h2 {
+  padding: 8px 0px 4px 0px;
+}
+
+#contact h2 {
+  padding: 20px 0px 10px 0px;
+}
+
+#contact #socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0px;
+}
+
+#contact #socialLinks a {
+  color: white;
+}
+
+#contact #socialLinks a img {
+  height: 48px;
+}
+
+#contact #socialLinks a:hover img {
+  color: #ffae00;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+/*# sourceMappingURL=newstyle.css.map */

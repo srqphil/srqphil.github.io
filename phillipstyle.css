@@ -5,6 +5,13 @@ body, html {
   margin: 0;
 }
 
+@media screen and (min-width: 601px) {
+  body, html {
+    max-width: 800px;
+    margin: auto;
+  }
+}
+
 nav {
   position: fixed;
   right: 20px;
@@ -42,22 +49,41 @@ nav #myLinks li a {
   font-weight: bold;
 }
 
+@media screen and (min-width: 600px) {
+  nav #myLinks {
+    display: inline-block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: initial;
+    border: 4px solid black;
+  }
+}
+
 nav #menu_icons {
   background-color: rgba(0, 0, 0, 0);
   font-size: 48px;
   color: black;
 }
 
+@media screen and (min-width: 600px) {
+  nav #menu_icons {
+    display: none;
+  }
+}
+
 .titleBox {
   border-bottom: black solid 4px;
   background-color: #6699cc;
-  border: solid 4px black;
-  margin: 8px 12px 0px 4px;
+  margin: 8px 12px 0px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   -webkit-box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.3);
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
 }
 
 .titleBox h1 {
@@ -68,12 +94,13 @@ nav #menu_icons {
 
 .card {
   background-color: white;
-  border: solid 4px black;
   border-top: none;
-  margin: 0px 12px 12px 4px;
+  margin: 0px 12px 12px 12px;
   padding: 40px 0px;
   -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
 .card a, .card p, .card h2 {
@@ -85,16 +112,12 @@ nav #menu_icons {
   font-size: 28px;
 }
 
-i {
-  background-color: #eecd81;
-}
-
 #homeCard {
   padding: 8px;
   background-color: white;
-  border: solid 4px black;
-  margin: 0px 12px 12px 4px;
+  margin: 0px 12px 12px 12px;
   min-height: 600px;
+  border-radius: 12px;
   -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
@@ -118,10 +141,19 @@ i {
 }
 
 #homeIMG {
-  border: black 4px solid;
-  width: 80%;
+  width: 280px;
+  margin: 12px;
+  background-color: white;
+  border: 8px solid black;
+  border-radius: 12px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+#homeIMG img {
   min-height: 300px;
-  background-color: #33cc99;
+  max-height: 400px;
+  margin: 20px;
 }
 
 #about {
@@ -166,7 +198,7 @@ i {
 }
 
 #connected {
-  background-color: #d65c5c;
+  background-color: #e5384a;
 }
 
 #email {
