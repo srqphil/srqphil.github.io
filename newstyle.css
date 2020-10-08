@@ -118,7 +118,7 @@ header #menu_icons {
   header nav #myLinks a:active {
     font-size: 20px;
   }
-  header nav a {
+  header nav .icon {
     display: none;
   }
 }
