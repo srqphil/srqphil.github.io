@@ -14,10 +14,10 @@
         <h2>Phillip Peña</h2>
         <nav>
             <div id="myLinks">
-                <a href="index.html">Home</a>
-                <a href="#about">About Me</a>
-                <a href="#project">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="index.html" onclick="myFunction()">Home</a>
+                <a href="#about" onclick="myFunction()">About Me</a>
+                <a href="#project" onclick="myFunction()">Projects</a>
+                <a href="#contact" onclick="myFunction()">Contact</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i id="menu_icons" class="material-icons">menu</i> 
@@ -27,7 +27,7 @@
     <main>
         <div class="container" id="home">
             <div class="imgwrapper">
-                <img src="" alt="Line Art Self Portrait">
+                <img src="images/svg/inkselfportrait.png" alt="Line Art Self Portrait">
             </div>
             <h1>Web Developer</h1>
         </div>
@@ -50,37 +50,37 @@
         <div class="container" id="project">
             <h1>The Goods</h1>
             <div class="projectWrapper">
-                <div class="projImg" id="projectOne">
-                    <a href="">link to project</a>
-                    <a href="">link to code</a>
-                </div>
                 <div id="projectText">
+                    <div class="projImg" id="projectOne">
+                        <a href="">link to project</a>
+                        <a href="">link to code</a>
+                    </div>
                     <h2>Project Title #1 (Coming Soon!)</h2>
                     <p>Brief description of project, technologies used, lessons learned and any other interest bits of information</p>
                 </div>
             
             
-                <div class="projImg" id="projectTwo">
-                    <a href="">link to project</a>
-                    <a href="">link to code</a>
-                </div>
                 <div id="projectText">
+                    <div class="projImg" id="projectTwo">
+                        <a href="">link to project</a>
+                        <a href="">link to code</a>
+                    </div>
                     <h2>Project Title #2 (Coming Soon!)</h2>
                     <p>Brief description of project, technologies used, lessons learned and any other interest bits of information</p>
                 </div>            
-                <div class="projImg" id="projectThree">
-                    <a href="">link to project</a>
-                    <a href="">link to code</a>
-                </div>
                 <div id="projectText">
+                    <div class="projImg" id="projectThree">
+                        <a href="">link to project</a>
+                        <a href="">link to code</a>
+                    </div>
                     <h2>Project Title #3 (Coming Soon!)</h2>
                     <p>Brief description of project, technologies used, lessons learned and any other interest bits of information</p>
                 </div>        
-                <div class="projImg" id="projectFour">
-                    <a href="">link to project</a>
-                    <a href="">link to code</a>
-                </div>
                 <div id="projectText">
+                    <div class="projImg" id="projectFour">
+                        <a href="">link to project</a>
+                        <a href="">link to code</a>
+                    </div>
                     <h2>Project Title #4 (Coming Soon!)</h2>
                     <p>Brief description of project, technologies used, lessons learned and any other interest bits of information</p>
                 </div>
@@ -109,7 +109,7 @@
         function myFunction() {
             var x = document.getElementById("myLinks");
             if (x.style.display === "flex") {
-                x.style.display = "none";
+                x.style.display = "";
             }
             else {
              x.style.display = "flex";

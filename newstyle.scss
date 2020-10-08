@@ -13,7 +13,7 @@ h1,h2,p,ul {
 
 p {
     font-family: 'Raleway', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 header { 
@@ -54,6 +54,10 @@ header {
             border-bottom: 1px solid white;
 
         }
+    }
+    .icon {
+        display: block;
+        padding: 3px 5px;
     }
 
     #menu_icons { 
@@ -115,6 +119,10 @@ main {
     max-width: 800px;
     padding: 40px 12px;
     border-bottom: 1px solid black;
+    
+    h1{
+        padding-bottom: 40px;
+    }
 }
 
 #home {
@@ -123,10 +131,13 @@ main {
     align-items: center;
 
     .imgwrapper {
-        background-color: grey;
-        height: 300px;
-        width: 200px;
+        min-width: 280px;
+        max-width: 60%;
         margin: 40px 0px;
+
+        img{
+            width: 100%;
+        }
     }
 
     h1 {
@@ -149,14 +160,13 @@ main {
         align-items: center;
         padding: 20px 0px;
 
+
         .projImg {
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
             background-color: grey;
-
-            width: 50%;
-            min-width: 300px;
+            width: 100%;
             min-height: 200px;
             border-radius: 12px;
 
@@ -183,28 +193,34 @@ main {
 
 #contact {
     h2 {
-        padding: 20px 0px 10px 0px;
+        padding: 40px 0px 10px 0px;
 
     }
     #socialLinks {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 10px 0px;
+        padding: 10px 10px;
 
         a {
-            color: white;
             img {
                 height: 48px;
             }
         }
-        a:hover {
-            img {color: rgb(255, 174, 0);}
-        }
+         a:hover {
+                    color: rgb(255, 174, 0);
+                    font-size: 22px;
+                }
     }
 }
 
 footer {
     text-align: center;
     padding: 10px;
+}
+
+embed {
+    width: auto;
+    max-width: 100%;
+    height: 100%;
 }
